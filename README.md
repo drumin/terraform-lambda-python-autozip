@@ -1,6 +1,7 @@
 # Terraform Code to Deploy Python Code to Lambda
 
 This Terraform module helps create a Lambda function which runs on Python and is triggered by a cronjob. This code also allows you to set to access secrets from the AWS Secrets Manager.
+The code will detect whenever there is any change in the code or requirements file and update the changes.
 
 ## Inputs
 
@@ -20,3 +21,11 @@ This Terraform module helps create a Lambda function which runs on Python and is
 |lambda_target_id|CloudWatch Target ID.|False|
 |layer_name|Name of the lambda layer.|False|
 |secrets_manager_policy_arn|ARN of Secrets Manager policy.|False|
+
+## Commands to run
+```
+terraform init
+terraform plan
+
+terraform apply
+```
