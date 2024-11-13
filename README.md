@@ -24,8 +24,12 @@ The code will detect whenever there is any change in the code or requirements fi
 
 ## Commands to run
 ```
+# Initialize Terraform
 terraform init
+
+# View the Deployment Plan
 terraform plan
 
+# Apply the Deployment Plan
 terraform apply
 ```
